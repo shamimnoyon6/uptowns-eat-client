@@ -17,6 +17,7 @@ import slide2 from '../../../assets/home/slide2.jpg'
 import slide3 from '../../../assets/home/slide3.jpg'
 import slide4 from '../../../assets/home/slide4.jpg'
 import slide5 from '../../../assets/home/slide5.jpg'
+import SectionTitle from "../../../Components/SectionTitle";
 
 
 const Catagory = () => {
@@ -56,6 +57,11 @@ const Catagory = () => {
 
 
 
+<section>
+<SectionTitle 
+            subHeading={"From 11.00am to 10.00pm"}
+            heading={"Order Online"}
+            ></SectionTitle>
 <Swiper
         effect={"cards"}
         grabCursor={true}
@@ -78,6 +84,7 @@ const Catagory = () => {
             <img src={slide5} alt="" /></SwiperSlide>
             <h4 className="text-4xl uppercase text-center -mt-20">salad</h4>
       </Swiper>
+</section>
     );
 };
 
